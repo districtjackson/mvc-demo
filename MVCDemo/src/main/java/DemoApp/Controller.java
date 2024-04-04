@@ -22,11 +22,11 @@ public class Controller extends Application {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Controller.class.getResource("../Views/numberadder.fxml"));
 		
-		loader.load();
+		BorderPane view = loader.load();
 		
-		//Scene scene = new Scene(view);
-		//primaryStage.setScene(scene);
-		//primaryStage.show();
+		Scene scene = new Scene(view);
+		primaryStage.setScene(scene);
+		primaryStage.show();
 		
 	}
 
